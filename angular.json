@@ -32,7 +32,7 @@
             ],
             "scripts": [],
             "customWebpackConfig": {
-              "path": "webpack.config.ts",
+              "path": "webpack.prod.config.ts",
               "replaceDuplicatePlugins": true
             }
           },

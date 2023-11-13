@@ -9,11 +9,12 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 
 import { UserState } from './profile/user-state/state/user.state';
 import { loadRemoteModule } from './utils/federation-utils';
+import { DOMAIN } from 'src/constants';
 
 export function initializeApp(): () => void {
   return () => {
     loadRemoteModule({
-      remoteEntry: 'http://localhost:3001/remoteEntry.js',
+      remoteEntry: `${DOMAIN}/remoteEntry.js`,
       remoteName: 'app_react',
       exposedModule: './listUser',
     });

@@ -1,0 +1,1 @@
+export const DOMAIN = "https://app-react-mf.vercel.app"
